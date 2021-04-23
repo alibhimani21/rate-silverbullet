@@ -11,34 +11,33 @@ def get_reviews():
     reviews = Review.query.all()
     return review_schema.jsonify(reviews, many=True), 200
 
-@router.route("/highest-rated", methods=["GET"])
-def get_highest_rating():
-    reviews = Review.query.all()
-    sorted_reviews = sorted(reviews, key=lambda review: review.score, reverse=True)
-    return review_schema.jsonify(sorted_reviews, many=True), 200
-
-# @router.route("/test", methods=["GET"])
-# def get_test():
-#     reviews = Review.query.order_by('score').all()
-#     return review_schema.jsonify(reviews, many=True), 200
-
 @router.route("/lowest-rated", methods=["GET"])
 def get_lowest_rating():
-    reviews = Review.query.all()
-    sorted_reviews = sorted(reviews, key=lambda review: review.score)
-    return review_schema.jsonify(sorted_reviews, many=True), 200
+    reviews = Review.query.order_by('score').all()
+    return review_schema.jsonify(reviews, many=True), 200
+
+@router.route("/highest-rated", methods=["GET"])
+def get_highest_rating():
+    reviews = Review.query.order_by('score').all()
+    reviews.reverse()
+    return review_schema.jsonify(reviews, many=True), 200
+
+# ? Alternative sorting method using Python sorted
+# ? @router.route("/alternative", methods=["GET"])
+# ? def alternative_method():
+# ?     reviews = Review.query.all()
+# ?     sorted_reviews = sorted(reviews, key=lambda review: review.score, reverse=True)
+# ?     return review_schema.jsonify(sorted_reviews, many=True), 200
 
 @router.route("/reviews", methods=["POST"])
 def add_review():
-
-    # try:
+    try:
         new_review = request.json
         review = review_schema.load(new_review)
         review.save()
         return review_schema.jsonify(review), 200
-    
-    # except ValidationError as e:
-    #     return {"errors": e.messages, "messages": "Something went wrong"}
+    except ValidationError as e:
+        return {"errors": e.messages, "messages": "Something went wrong"}
 
 @router.route("/average-score", methods=["GET"])
 def get_average_score():
