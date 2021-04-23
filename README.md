@@ -1,5 +1,5 @@
-# RateSilverBullet
-Technical test for SilverBullet
+# RateSilverbullet
+Technical test for Silverbullet
 
 ## Brief
 
