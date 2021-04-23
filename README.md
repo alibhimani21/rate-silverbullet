@@ -2,6 +2,7 @@
 Technical test for SilverBullet
 
 ##Brief
+
 - Create a basic web application "RateSilverBullet" in django (or comparable python framework)
 - Allow unauthenticated users to give wearesilverbullet.com a review and a score between 1 to 5
 - Allow unauthenticated users to sort the reviews by score
@@ -9,12 +10,14 @@ Technical test for SilverBullet
 - Make it pretty
 
 ##Technology and Features
+
 - Flask PostgresQL backend
 - React frontend
 - Sass styling
 - Material-UI for star ratings
 
 ##Instructions to run application locally
+
 Using Homebrew install `pipenv` and `postgresql`
 
 * ```brew install pipenv``` 
