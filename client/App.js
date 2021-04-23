@@ -193,7 +193,7 @@ const App = () => {
       </div>
       {reviews.map(review => {
         return <div key={review.id} className="review">
-          <h5>"{review.title}", {review.name}</h5>
+          <h5>"{review.title}" - {review.name}</h5>
           <StyledRating
             value={review.score}
             name="score"
