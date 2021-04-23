@@ -18,26 +18,26 @@ Technical test for SilverBullet
 
 ## Instructions to run application locally
 
-Using Homebrew install `pipenv` and `postgresql`
+1. Using Homebrew install `pipenv` and `postgresql`
 
 * ```brew install pipenv``` 
 * ```brew install postgresql```
 
-Next create a database called `rate_silver_bullet_db` in postgresql
+2. Next create a database called `rate_silver_bullet_db` in postgresql
 
 * ```createdb rate_silver_bullet_db```
 
-Now install the python and node packages
+3. Now install the python and node packages
 
 * ```pipenv install```
 * ```npm install```
 
-At this point you will need to add two files to the root of the project
+4. At this point you will need to add two files to the root of the project
 
 1. 	`.env`
 2. `.babelrc`
 
-For the `.env` copy and paste the three lines of code below:
+5. For the `.env` copy and paste the three lines of code below:
 
 ```
 FLASK_APP=server/app.py
@@ -46,7 +46,7 @@ FLASK_SKIP_DOTENV=1
 ```
 
 
-For the `.babelrc` copy and paste the following:
+6. For the `.babelrc` copy and paste the following:
 
 ```
 {
@@ -55,15 +55,15 @@ For the `.babelrc` copy and paste the following:
 }
 ```
 
-Start server
+7. Start server
 
 * ```npm run server```
 
-Launch frontend (webpack dev server)
+8. Launch frontend (webpack dev server)
 
 * ```npm run client```
 
-Seed data is available
+9. Seed data is available
 
 * ```npm run seed```
  
