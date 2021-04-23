@@ -46,7 +46,7 @@ FLASK_SKIP_DOTENV=1
 ```
 
 
-For the `.babelrc` cope and paste the following:
+For the `.babelrc` copy and paste the following:
 
 ```
 {
