@@ -1,20 +1,23 @@
-# RateSilverBullet
-Technical test for SilverBullet
+# RateSilverbullet
+Technical test for Silverbullet
 
-##Brief
+## Brief
+
 - Create a basic web application "RateSilverBullet" in django (or comparable python framework)
 - Allow unauthenticated users to give wearesilverbullet.com a review and a score between 1 to 5
 - Allow unauthenticated users to sort the reviews by score
 - Show an average overall score on screen across all user submissions
 - Make it pretty
 
-##Technology and Features
+## Technology and Features
+
 - Flask PostgresQL backend
 - React frontend
 - Sass styling
 - Material-UI for star ratings
 
-##Instructions to run application locally
+## Instructions to run application locally
+
 Using Homebrew install `pipenv` and `postgresql`
 
 * ```brew install pipenv``` 
@@ -43,7 +46,7 @@ FLASK_SKIP_DOTENV=1
 ```
 
 
-For the `.babelrc` cope and paste the following:
+For the `.babelrc` copy and paste the following:
 
 ```
 {
