@@ -151,7 +151,7 @@ const App = () => {
           </textarea>
         </label>
         <div  className={error ? 'error' : ''}>
-          <h5>{error ? 'Missing required fields!' : ''}</h5>
+          <h5>{error ? 'Required field(s) missing!' : ''}</h5>
         </div>
         <div className="buttons">
           <button className="button">Submit</button>
