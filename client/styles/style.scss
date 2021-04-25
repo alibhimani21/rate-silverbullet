@@ -163,6 +163,9 @@ form {
     input {
       margin-top: 0.25rem;
     }
+    textarea:hover, input:hover {
+      border: #7fffd4 2px solid;
+    }
   }
   .buttons {
     display: flex;
