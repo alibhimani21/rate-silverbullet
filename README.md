@@ -20,8 +20,9 @@ Technical test for Silverbullet
 
 ### Basic requirements
 Install Python3 and NodeJS
-```brew install python3```
-```brew install node```
+
+* ```brew install python3```
+* ```brew install node```
 
 Using Homebrew install `pipenv` and `postgresql`
 
