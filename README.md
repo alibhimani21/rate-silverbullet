@@ -18,6 +18,12 @@ Technical test for Silverbullet
 
 ## Instructions to run application locally
 
+### Basic requirements
+Install Python3 and NodeJS
+
+* ```brew install python3```
+* ```brew install node```
+
 Using Homebrew install `pipenv` and `postgresql`
 
 * ```brew install pipenv``` 
@@ -32,27 +38,14 @@ Now install the python and node packages
 * ```pipenv install```
 * ```npm install```
 
-At this point you will need to add two files to the root of the project
+At this point you will need to add a `.env` file to the root of the project
 
-1. 	`.env`
-2. `.babelrc`
-
-For the `.env` copy and paste the three lines of code below:
+* For the `.env` copy and paste the three lines of code below:
 
 ```
 FLASK_APP=server/app.py
 FLASK_ENV=development
 FLASK_SKIP_DOTENV=1
-```
-
-
-For the `.babelrc` copy and paste the following:
-
-```
-{
-  "presets": ["@babel/preset-env", "@babel/preset-react"],
-  "plugins": ["@babel/plugin-transform-runtime"]
-}
 ```
 
 Start server
