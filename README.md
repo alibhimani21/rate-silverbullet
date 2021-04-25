@@ -18,6 +18,11 @@ Technical test for Silverbullet
 
 ## Instructions to run application locally
 
+# Basic requirements
+* Install Python3 and NodeJS
+```brew install python3```
+```brew install node```
+
 Using Homebrew install `pipenv` and `postgresql`
 
 * ```brew install pipenv``` 
