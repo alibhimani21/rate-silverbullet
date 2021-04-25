@@ -5,7 +5,7 @@ import Rating from '@material-ui/lab/Rating'
 
 const StyledRatingInput = withStyles({
   iconFilled: {
-    color: '#104F55'
+    color: '#6873FF'
   },
   iconHover: {
     color: '#7fffd4'
