@@ -19,7 +19,7 @@ Technical test for Silverbullet
 ## Instructions to run application locally
 
 # Basic requirements
-* Install Python3 and NodeJS
+Install Python3 and NodeJS
 ```brew install python3```
 ```brew install node```
 
@@ -39,7 +39,7 @@ Now install the python and node packages
 
 At this point you will need to add a `.env` file to the root of the project
 
-For the `.env` copy and paste the three lines of code below:
+* For the `.env` copy and paste the three lines of code below:
 
 ```
 FLASK_APP=server/app.py
